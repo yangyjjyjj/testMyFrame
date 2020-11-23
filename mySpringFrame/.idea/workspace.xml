@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6af54679-0327-4b99-b25b-d6c4e26de7a3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven-3.6.2\LocalWareHouse" />
+        <option name="mavenHome" value="E:/maven-3.6.2/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="E:\maven-3.6.2\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kOpcVZVeqPpbCOCOznlfExQNp7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/security-core/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.42007002" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yjj.util.schedule" />
+      <recent name="property" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\openResource\mySpringFrame\security-core\src\main\resources" />
+      <recent name="E:\openResource\mySpringFrame\utils\src\main\java\com\yjj\util\timeConsuming" />
+      <recent name="E:\openResource\mySpringFrame\utils\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UtilApplication">
+    <configuration name="LogAspect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.aspect.LogAspect" />
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.aspect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogAspectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.LogAspectTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogAspectTest.testLogAnnotation (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjj.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yjj.util" />
+      <option name="MAIN_CLASS_NAME" value="com.yjj.util.LogAspectTest" />
+      <option name="METHOD_NAME" value="testLogAnnotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogAspectTest.testLogAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="utils" />
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.LogAspectTest" />
+      <option name="METHOD_NAME" value="testLogAnnotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yjj.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yjj.util.UtilApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UtilApplication" />
+        <item itemvalue="JUnit.LogAspectTest.testLogAnnotation (1)" />
+        <item itemvalue="JUnit.LogAspectTest" />
+        <item itemvalue="JUnit.LogAspectTest.testLogAnnotation" />
+        <item itemvalue="Application.LogAspect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6af54679-0327-4b99-b25b-d6c4e26de7a3" name="Default Changelist" comment="" />
+      <created>1605581571335</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605581571335</updated>
+      <workItem from="1605581579771" duration="14742000" />
+      <workItem from="1605686986866" duration="4114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="543" y="195" key="#LogAspectTest" timestamp="1605593383717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="543" y="195" key="#LogAspectTest/0.0.1920.1040@0.0.1920.1040" timestamp="1605593383717" />
+    <state x="552" y="180" key="#Project_Structure" timestamp="1605585079181">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="180" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1605585079181" />
+    <state x="793" y="329" key="#com.intellij.ide.util.MemberChooser" timestamp="1605690002874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="793" y="329" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605690002874" />
+    <state x="623" y="447" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605592861478">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="447" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605592861478" />
+    <state x="744" y="385" width="431" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605592945193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="385" width="431" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1605592945193" />
+    <state width="1876" height="364" key="GridCell.Tab.0.bottom" timestamp="1605609280971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280971" />
+    <state width="1876" height="364" key="GridCell.Tab.0.center" timestamp="1605609280970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280970" />
+    <state width="1876" height="364" key="GridCell.Tab.0.left" timestamp="1605609280969">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280969" />
+    <state width="1876" height="364" key="GridCell.Tab.0.right" timestamp="1605609280971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280971" />
+    <state width="1876" height="364" key="GridCell.Tab.1.bottom" timestamp="1605609280972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280972" />
+    <state width="1876" height="364" key="GridCell.Tab.1.center" timestamp="1605609280972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280972" />
+    <state width="1876" height="364" key="GridCell.Tab.1.left" timestamp="1605609280971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280971" />
+    <state width="1876" height="364" key="GridCell.Tab.1.right" timestamp="1605609280972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="364" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605609280972" />
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog" timestamp="1605592251595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605592251595" />
+    <state x="330" y="223" key="new project wizard" timestamp="1605687829280">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="330" y="223" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605687829280" />
+  </component>
+</project>
