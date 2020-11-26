@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wtwd.ldl.dao.SysRolePerDao">
+    <resultMap id="BaseResultMap" type="SysPer">
+       <id column="per_id" property="per_id" />
+        <result column="per_url" property="per_url" />
+        <result column="per_des" property="per_des" />
+    </resultMap>
+
+    <resultMap id="RolePerResultMap" type="SysPer" extends="BaseResultMap">
+        <collection property="roleList" ofType="SysRole">
+            <id column="id" property="role_id" />
+            <result column="name" property="role_name" />
+            <result column="add_time" property="addTime" />
+            <result column="edit_permission" property="editPermission" />
+        </collection>
+    </resultMap>
+
+    <select id="getUrlPerRoleListByUrl" parameterType="java.lang.String" resultMap="RolePerResultMap">
+        select p.id as per_id ,p.url as per_url , p.des as per_des , r.*
+        from sys_role r ,sys_permission p , sys_role_permission pr
+        where r.id = pr.role_id and p.id = pr.per_id
+        and p.url = #{url}
+    </select>
+
+</mapper>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <!--引用外部 css 文件-->
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <!--js-->
+    <script type="text/javascript">
+        $(function () {
+            // 背景图片的定时切换
+            $(".screenbg ul li").each(function () {
+                $(this).css("opacity", "0");
+            });
+            $(".screenbg ul li:first").css("opacity", "1");
+            var index = 0;
+            var t;
+            var li = $(".screenbg ul li");
+            var number = li.size();
+
+            function change(index) {
+                li.css("visibility", "visible");
+                li.eq(index).siblings().animate({
+                    opacity: 0
+                }, 3000);
+                li.eq(index).animate({
+                    opacity: 1
+                }, 3000);
+            }
+
+            function show() {
+                index = index + 1;
+                if (index <= number - 1) {
+                    change(index);
+                } else {
+                    index = 0;
+                    change(index);
+                }
+            }
+
+            t = setInterval(show, 8000);
+            //根据窗口宽度生成图片宽度
+            var width = $(window).width();
+            $(".screenbg ul img").css("width", width + "px");
+
+            //图片添加点击事件
+            $("#img").click(function () {
+                $(this).src = "http://39.105.88.199:1001/getKaptchaImage";
+            });
+
+
+        })
+    </script>
+
+</head>
+
+<body>
+<div class="login-box">
+    <h1>乐听音乐系统后台登录</h1>
+    <form method="post" action="/login">
+        <div class="name">
+            <label>账号：</label>
+            <input type="text" name="username" id="" tabindex="1" autocomplete="off">
+        </div>
+        <div class="password">
+            <label>密 码：</label>
+            <input type="password" name="password" maxlength="16" id="" tabindex="2">
+        </div>
+        <div class="code">
+            <label>验证码：</label>
+            <input type="text" name="verifyCode" maxlength="4" id="code" tabindex="3">
+            <div class="codeImg">
+                <!--这个图片路径     要跟访问这个页面的请求的协议，IP，端口一致，不然会跨域，session丢失-->
+                <img id="img" src="http://39.105.88.199:1001/getKaptchaImage"
+                     onclick="this.src = 'http://39.105.88.199:1001/getKaptchaImage'">
+            </div>
+        </div>
+        <div class="remember">
+            <input type="checkbox" name = "remember-me" tabindex="4">
+            <label>保持登录</label>
+        </div>
+        <div class="login">
+            <button type="submit" tabindex="4">登录</button>
+        </div>
+    </form>
+</div>
+<div class="bottom">©2014 Leting
+    <a href="javascript:;" target="_blank">关于</a> <span>京ICP证030173号</span><img width="13" height="16"
+                                                                                src="img/copy_rignt_24.png">
+</div>
+
+<div class="screenbg">
+    <ul>
+        <li style="opacity: 1; visibility: visible;">
+            <a href="javascript:;"><img src="img/0.jpg" style="width: 1903px;"></a>
+        </li>
+        <li style="opacity: 0; visibility: visible;">
+            <a href="javascript:;"><img src="img/1.jpg" style="width: 1903px;"></a>
+        </li>
+        <li style="opacity: 0; visibility: visible;">
+            <a href="javascript:;"><img src="img/2.jpg" style="width: 1903px;"></a>
+        </li>
+    </ul>
+</div>
+</body>
+
+</html>

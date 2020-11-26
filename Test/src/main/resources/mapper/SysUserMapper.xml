@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wtwd.ldl.dao.SysUserDao">
+
+    <resultMap id="BaseResultMap" type="SysUser">
+       <id column="id" property="user_id" />
+        <result column="name" property="user_name" />
+        <result column="phone" property="phone" />
+        <result column="password" property="password" />
+        <result column="registe_time" property="registeTime"/>
+        <result column="lastlogin_time" property="lastLoginTime"/>
+        <collection property="roleList" ofType="SysRole">
+            <id column="role_id" property="role_id" />
+            <result column="role_name" property="role_name"/>
+        </collection>
+    </resultMap>
+
+    <select id="getSysUserById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select a.*,b.id as role_id,b.name as role_name
+        from sys_user a ,sys_role b ,sys_user_role c
+        where a.id = c.user_id and b.id = c.role_id
+         and a.id = #{userId}
+    </select>
+
+    <select id="getSysUserByName" resultMap="BaseResultMap" parameterType="java.lang.String">
+         select a.*,b.id as role_id,b.name as role_name
+        from sys_user a ,sys_role b ,sys_user_role c
+        where a.id = c.user_id and b.id = c.role_id
+         and a.name = #{userName}
+    </select>
+
+    <update id="updateLoginTime" parameterType="java.lang.Integer">
+        update sys_user set lastlogin_time = now() where id =#{userId}
+    </update>
+</mapper>
